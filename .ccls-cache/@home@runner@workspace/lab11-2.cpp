@@ -34,23 +34,22 @@ int main()
 }//end of main function    
 
 //*****function definitions*****
-double getAverege(double times[], int numElements)
+double getAverage(double times[], int numElements)
 {
     double total = 0.0;
-
-    for (int x = 0; x < numElements; x += 1)
+    for (int x = 0; x < numElements; x += 1) {
         total += times[x];
-    //end for
+    }
     return total / numElements;
 } //end of getAverage function
 
 double getLowest(double times[], int numElements)
 {
     double lowest = times[0];
-    for (int x = 1; x < numElements; x += 1)
-        if (times[x] < lowest)
+    for (int x = 1; x < numElements; x += 1) {
+        if (times[x] < lowest) {
             lowest = times[x];
-    //end if
-//end for
+        }
+    }
     return lowest;
 } //end of getLowest function
